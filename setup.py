@@ -30,6 +30,11 @@ tests_require = [
     'pylint',
 ]
 
+def version_scheme(version):
+    from setuptools_scm.version import guess_next_dev_version
+    version = guess_next_dev_version(version)
+    return version.lstrip("v")
+
 setuptools.setup(
     name='simp_le',
     author='Ian Denhardt',
