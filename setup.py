@@ -41,7 +41,7 @@ setuptools.setup(
     py_modules=['simp_le'],
     setup_requires=['setuptools_scm'],
     use_scm_version={
-        'write_to': "simp_le/version.py",
+        'write_to': "version.py",
         'version_scheme': version_scheme,
     },
     install_requires=install_requires,
