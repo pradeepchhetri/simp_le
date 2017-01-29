@@ -32,8 +32,8 @@ tests_require = [
 
 def version_scheme(version):
     from setuptools_scm.version import guess_next_dev_version
-    version = guess_next_dev_version(version)
-    return version.lstrip("v")
+    version = get_local_node_and_date(version)
+    return version
 
 setuptools.setup(
     name='simp_le',
